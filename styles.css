@@ -1,0 +1,126 @@
+:root {
+  --softblue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}
+.image {
+  position: relative;
+}
+.card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  min-width: 50px;
+  max-width: 325px;
+}
+.title {
+  color: hsl(0, 0%, 100%);
+  font-family: "Outfit";
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+}
+.desc {
+  color: var(--softblue);
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 18px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.equilibrium-img {
+  max-width: 250px;
+  margin-left: 2.35rem;
+  margin-top: 1rem;
+  border-radius: 15px;
+}
+.price {
+  display: flex;
+  color: var(--cyan);
+  font-family: "Outfit";
+  align-items: center;
+}
+.price-img {
+  margin-right: 5px;
+}
+.days {
+  color: var(--softblue);
+  font-family: "Outfit";
+  display: flex;
+  align-items: center;
+}
+.days-img {
+  margin-right: 5px;
+}
+.price-days {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 1.25rem;
+}
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30px;
+  margin-right: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 5%;
+  margin-left: 1rem;
+}
+span {
+  color: white;
+  font-family: "Outfit";
+  margin-left: 6px;
+}
+.creator {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: var(--softblue);
+}
+
+span:hover,
+.title:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.image div {
+  position: absolute;
+  background-color: var(--cyan);
+  top: 0;
+  height: 250px;
+  width: 250px;
+  opacity: 0;
+  margin-left: 2.35rem;
+  margin-top: 1rem;
+  border-radius: 15px;
+}
+.hover-eye:hover {
+  opacity: 0.4;
+}
+.image .hover-eye img {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+@media only screen and (max-width: 300px) {
+  .body {
+    margin-top: 100px;
+  }
+  .card {
+    max-width: 200px;
+  }
+}
